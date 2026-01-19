@@ -1,0 +1,97 @@
+# Agents-Mobile - .gitignore
+
+# === Logs ===
+logs/*.log
+logs/*.json
+logs/detection-report.json
+logs/android-test.log
+logs/benchmark-results.json
+
+# === Cache ===
+bun-cache/
+.cache/
+cache/
+
+# === Temporary Files ===
+*.tmp
+*.temp
+/tmp/
+test-*.dat
+*.test
+
+# === Build Artifacts ===
+build/
+dist/
+out/
+*.o
+*.so
+*.a
+
+# === Node/Bun ===
+node_modules/
+.bun/
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === Environment ===
+.env
+.env.local
+.env.*.local
+*.key
+*-key.json
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vim/
+
+# === Chroot (if accidentally added) ===
+arch-chroot/
+ubuntu-chroot/
+debian-chroot/
+
+# === User Customizations ===
+aliases/user.zsh
+scripts/custom/
+user-config/
+
+# === Android Specific ===
+*.apk
+*.dex
+*.class
+
+# === Backup Files ===
+*.bak
+*.backup
+*.old
+
+# === MCP Storage ===
+mcp-storage/
+storage/
+*.db
+*.sqlite
+
+# === Test Outputs ===
+test-output/
+coverage/
+*.lcov
+
+# === Documentation Build ===
+docs/_build/
+docs/.doctrees/
+
+# Keep these files
+!.gitkeep
+!logs/.gitkeep
+!cache/.gitkeep
+!storage/.gitkeep
